@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
+        #container {
+            margin: 50px auto;
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .section div {
+            width: 48%;
+        }
+
+        h3 {
+            font-weight: 500;
+        }
+
+        ol, ul {
+            border: 1px solid red;
+            border-radius: 15px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+
+        ol {
+            list-style: decimal;
+        }
+
+        ul {
+            list-style: upper-roman;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-section {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 3.3: Build a Web Page Exercise - Part 3</h1>
+        <div class="section">
+            <div>
+                <h3>Top 10 Favorite Books</h3>
+                <ol>
+                    <li>if I DID IT</li>
+                    <li>Push</li>
+                    <li>It's Not You, It's Everything</li>
+                    <li>Act Like A Lady, Think Like A Man</li>
+                    <li>What the Fireflies Knew</li>
+                    <li>The Arrangement</li>
+                    <li>Things That Fall Apart</li>
+                    <li>Lies</li>
+                    <li>The Power of Moments</li>
+                    <li>Murder at Minnesota Point</li>
+                </ol>
+            </div>
+            <div>
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul>
+                    <li>How to use GitHub</li>
+                    <li>How to make font in a webpage</li>
+                    <li>How to make a webpage with color</li>
+                    <li>How to even make a webpage</li>
+                    <li>Much more about the mind from reading the 100 Things book</li>
+                </ul>
+            </div>
+        </div>
+        <div class="last-section">
+            <a href="index.html">Back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
