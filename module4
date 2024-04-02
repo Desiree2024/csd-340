@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: rgba(50, 100, 150, 0.9);
+            margin-bottom: 20px;
+        }
+
+        #image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        #image-gallery div {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            color: rgba(100, 150, 200, 0.8);
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 0.75em;
+            color: rgba(150, 200, 250, 0.7);
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: rgba(50, 100, 150, 0.9);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 4.2: Build a Web Page Exercise - Part 4</h1>
+        
+        <div id="image-gallery">
+            <div>
+                <h3>Push</h3>
+                <img src="https://raw.githubusercontent.com/Desiree2024/csd-340/main/push.jpg" alt="Push">
+                <figcaption>(author: Sapphire)</figcaption>
+            </div>
+            <div>
+                <h3>If I Did It</h3>
+                <img src="https://raw.githubusercontent.com/Desiree2024/csd-340/main/if%20I%20did%20it.jpg" alt="If I Did It">
+                <figcaption>(authors: O.J. Simpson, The Goldman Family, Pablo Fenjves)</figcaption>
+            </div>
+            <div>
+                <h3>It's Not You, It's Everything</h3>
+                <img src="https://raw.githubusercontent.com/Desiree2024/csd-340/main/its%20not%20you%2C%20its%20everything.jpg" alt="It's Not You, It's Everything">
+                <figcaption>(author: Eric Minton)</figcaption>
+            </div>
+        </div>
+        
+        <a href="index.html">Back to Portal Page</a>
+    </div>
+</body>
+</html>
 
