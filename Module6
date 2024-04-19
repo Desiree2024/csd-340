@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="LastName_Mod6_2.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 6.2: Build a Web Page - Part 5</h1>
+    </header>
+
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="container">
+        <div class="card">
+            <div class="card-title">Top 5 Favorite Foods</div>
+            <div class="card-content">
+                <ol>
+                    <li><a href="#" target="_blank">Favorite Food 1 Recipe</a></li>
+                    <li><a href="#" target="_blank">Favorite Food 2 Recipe</a></li>
+                    <li><a href="#" target="_blank">Favorite Food 3 Recipe</a></li>
+                    <li><a href="#" target="_blank">Favorite Food 4 Recipe</a></li>
+                    <li><a href="#" target="_blank">Favorite Food 5 Recipe</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="#">Back to Portal Page</a></p>
+    </footer>
+</body>
+</html>
+ css
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    border-bottom: 15px solid #ddd; /* Change the color to your preference */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Change the color to your preference */
+    color: black; /* Change the color to your preference */
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333; /* Change the color to your preference */
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+footer {
+    background-color: #333; /* Change the color to match header */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
