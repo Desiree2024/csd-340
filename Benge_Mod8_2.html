@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        #movies {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        #movies th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #ddd;
+            color: #333;
+        }
+
+        #movies td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            margin: 2% 5% 100px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-content {
+            font-size: 16px;
+            color: #333;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card-title">Top 5 Favorite Movies</div>
+            <div class="card-content">
+                <table id="movies">
+                    <thead>
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Two Characters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Godfather</td>
+                            <td>
+                                <ul>
+                                    <li>Don Vito Corleone</li>
+                                    <li>Michael Corleone</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>The Notebook</td>
+                            <td>
+                                <ul>
+                                    <li>Noah Calhoun</li>
+                                    <li>Allie Hamilton</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hope Floats</td>
+                            <td>
+                                <ul>
+                                    <li>Birdee Pruitt</li>
+                                    <li>Justin Matisse</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Moana</td>
+                            <td>
+                                <ul>
+                                    <li>Moana</li>
+                                    <li>Maui</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lion King</td>
+                            <td>
+                                <ul>
+                                    <li>Simba</li>
+                                    <li>Nala</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Black Panther</td>
+                            <td>
+                                <ul>
+                                    <li>Black Panther (T'Challa)</li>
+                                    <li>Erik Killmonger</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br>
+        <div class="card">
+            <div class="card-title">Favorite Foods</div>
+            <div class="card-content">
+                <ul>
+                    <li>Banana Bread</li>
+                    <li>Chicken Alfredo</li>
+                    <li>Cheesecake</li>
+                    <li>Meatloaf</li>
+                    <li>Marry Me Chicken</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Benge</p>
+    </footer>
+</body>
+</html>
+
+
