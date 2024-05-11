@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Desiree Benge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Desiree Benge</h1>
+
+    <p>Hey there!</p>
+
+    <p>I'm Desiree Benge, living in MinneapolisMinnesota. Recently married, I'm balancing life as a nurse in an addiction clinic while going back into student life, pursuing a bachelor's in computer information systems. It's a wild and crazy ride, but I'm all about taking on this wonderful journey!</p>
+
+    <p>Between my two children, aged 11 and 1, and hanging out with my husband, and out Scottish Fold cat, I'm all about outdoor adventures. Whether it's splashing in my pool, going fishing, or cruising on a boat, I'm happiest soaking up the sun and fresh air.</p>
+
+    <p>When I'm not in the outdoors, such as during the cold winter months, you'll find me engaged in true crime books or baking up delicious treats in the kitchen, like my homemade sourdough bread. Life's about finding joy in the little moments, and I'm here for all of it!</p>
+</body>
+</html>
