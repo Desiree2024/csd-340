@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function changeImage(imageId, newSrc) {
+            document.getElementById(imageId).src = newSrc;
+        }
+        function revertImage(imageId, originalSrc) {
+            document.getElementById(imageId).src = originalSrc;
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <p>Run your mouse over the image to change.</p>
+    <img src="https://github.com/Desiree2024/csd-340/raw/main/1.jpg" id="image1" alt="Image 1" 
+         onmouseover="changeImage('image1', 'https://github.com/Desiree2024/csd-340/raw/main/4.jpg')" 
+         onmouseout="revertImage('image1', 'https://github.com/Desiree2024/csd-340/raw/main/1.jpg')">
+    <img src="https://github.com/Desiree2024/csd-340/raw/main/2.jpg" id="image2" alt="Image 2" 
+         onmouseover="changeImage('image2', 'https://github.com/Desiree2024/csd-340/raw/main/4.jpg')" 
+         onmouseout="revertImage('image2', 'https://github.com/Desiree2024/csd-340/raw/main/2.jpg')">
+    <img src="https://github.com/Desiree2024/csd-340/raw/main/3.jpg" id="image3" alt="Image 3" 
+         onmouseover="changeImage('image3', 'https://github.com/Desiree2024/csd-340/raw/main/4.jpg')" 
+         onmouseout="revertImage('image3', 'https://github.com/Desiree2024/csd-340/raw/main/3.jpg')">
+</body>
+</html>
