@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #display-area {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <input type="text" id="input-text" placeholder="Enter text here">
+    <br>
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLastElement()">Delete Last Entry</button>
+    <button onclick="displayElements()">Display</button>
+
+    <div id="display-area"></div>
+
+    <script>
+        let elementsArray = [];
+
+        function addElement() {
+            const inputText = document.getElementById('input-text').value;
+            if (inputText.trim() !== "") {
+                elementsArray.push(inputText);
+                alert(`Added: ${inputText} at position ${elementsArray.length}`);
+                document.getElementById('input-text').value = "";
+            } else {
+                alert("Please enter a valid text.");
+            }
+        }
+
+        function deleteLastElement() {
+            if (elementsArray.length > 0) {
+                const removedElement = elementsArray.pop();
+                alert(`Deleted: ${removedElement}`);
+            } else {
+                alert("No elements to delete.");
+            }
+        }
+
+        function displayElements() {
+            const displayArea = document.getElementById('display-area');
+            displayArea.innerHTML = "";
+            if (elementsArray.length > 0) {
+                elementsArray.forEach((element, index) => {
+                    displayArea.innerHTML += `<p>${index + 1}. ${element}</p>`;
+                });
+            } else {
+                displayArea.innerHTML = "<p>No elements to display.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
